@@ -1,6 +1,6 @@
 # cache-mount
 
-This example uses [cache mount](https://docs.docker.com/build/guide/mounts/)
+This example uses [cache mounts](https://docs.docker.com/build/guide/mounts/) and `bind mounts`
 
 ## How to check
 
