@@ -1,0 +1,7 @@
+services:
+  app:
+    image: busybox
+    container_name: app
+    volumes:
+      - .:/var/test
+    command: tail -f /dev/null
