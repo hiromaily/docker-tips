@@ -3,5 +3,7 @@ services:
     image: busybox
     container_name: app
     volumes:
-      - .:/var/test
+      #- .:/var/test
+      - .:/var/test:delegated # ホスト側の変更を遅延同期
+      #- .:/var/test:cached # コンテナ側の変更を遅延同期
     command: tail -f /dev/null
