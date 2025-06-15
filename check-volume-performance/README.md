@@ -12,7 +12,7 @@ $ docker exec -it app sh
 $ cd /var/test
 $ time dd if=/dev/zero of=speedtest bs=1024 count=102400
 
-# e.g. result of Intel Mac
+# e.g. result of Intel Mac (quite old version)
 # 102400+0 records in
 # 102400+0 records out
 # 104857600 bytes (100.0MB) copied, 55.297230 seconds, 1.8MB/s
@@ -20,21 +20,29 @@ $ time dd if=/dev/zero of=speedtest bs=1024 count=102400
 # user	0m 0.22s
 # sys	0m 14.03s
 
-# e.g. result of Macbook Air M2 (Docker version: v4.41)
-102400+0 records in
-102400+0 records out
-104857600 bytes (100.0MB) copied, 3.367585 seconds, 29.7MB/s
-real	0m 3.37s
-user	0m 0.02s
-sys	0m 1.72s
-/var/test # exit
-
+# e.g. result of Macbook Air M2 (Docker version: old version)
 # 102400+0 records in
 # 102400+0 records out
 # 104857600 bytes (100.0MB) copied, 21.052339 seconds, 4.8MB/s
 # real	0m 21.05s
 # user	0m 0.18s
 # sys	0m 1.99s
+
+# e.g. result of Macbook Air M2 (Docker version: v4.41)
+# 102400+0 records in
+# 102400+0 records out
+# 104857600 bytes (100.0MB) copied, 3.367585 seconds, 29.7MB/s
+# real	0m 3.37s
+# user	0m 0.02s
+# sys	0m 1.72s
+
+# e.g. result of Macbook Pro M3 (Docker version: v4.42)
+# 102400+0 records in
+# 102400+0 records out
+# 104857600 bytes (100.0MB) copied, 2.066274 seconds, 48.4MB/s
+# real	0m 2.06s
+# user	0m 0.04s
+# sys	0m 0.40s
 ```
 
 ## What is this?
